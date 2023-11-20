@@ -1,131 +1,130 @@
 :root {
-    --azul_marino: #004450;
-    --blanco: #FFFF;
-    --negro: #000000;
-    --lightgray: #757575;
-    --azulsecundario: #0097a7;
-    --border-r: .2rem;
+    --azul_marino: #004450;  /* Color azul marino utilizado en la paleta de colores */
+    --blanco: #FFFF;        /* Color blanco utilizado en la paleta de colores */
+    --negro: #000000;       /* Color negro utilizado en la paleta de colores */
+    --lightgray: #757575;   /* Color gris claro utilizado en la paleta de colores */
+    --azulsecundario: #0097a7;  /* Color azul secundario utilizado en la paleta de colores */
+    --border-r: .2rem;       /* Radio del borde utilizado en algunos elementos con bordes */
 }
+
 
 /** Estilos Generales **/
 
 html * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    box-sizing: border-box;
+    margin: 0;                     /* Establece el margen predeterminado como cero para todos los elementos */
+    padding: 0;                    /* Establece el relleno predeterminado como cero para todos los elementos */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  /* Define la fuente predeterminada para el texto */
+    box-sizing: border-box;        /* Hace que el modelo de caja incluya el relleno y el borde en las dimensiones totales */
 }
 
 p {
-    font-size: 1.1rem;
+    font-size: 1.1rem;   /* Establece el tamaño de fuente para los elementos de párrafo como 1.1rem */
 }
 
 a {
-    text-decoration: none;
+    text-decoration: none;   /* Elimina la decoración de subrayado de los enlaces */
 }
 
 .navegation .navegation-services a {
-    color: var(--negro);
-    font-weight: bold;
-    font-size: 1.2rem;
-    padding: 14px 16px;
+    color: var(--negro);        /* Color del texto */
+    font-weight: bold;           /* Grosor de la fuente, en negrita */
+    font-size: 1.2rem;           /* Tamaño de la fuente */
+    padding: 14px 16px;          /* Espaciado interno (arriba/abajo izquierda/derecha) */
 }
 
 .navegation .navegation-services .botton {
-    color: var(--blanco);
+    color: var(--blanco);  /* Color del texto */
 }
 
-ul,
-li {
-    list-style: none;
+ul, li {
+    list-style: none;  /* Elimina los estilos de viñetas o numeración en listas */
 }
 
 .wrap-cta {
-    padding: 1.5rem 0;
+    padding: 1.5rem 0;  /* Establece un relleno de 1.5rem arriba y abajo, sin relleno a los lados */
 }
 
 .cta-a {
-    color: #fff;
-    font-weight: bold;
-    font-size: 1.2rem;
-    background-color: var(--azul_marino);
-    padding: .5rem 1rem;
-    border-radius: var(--border-r);
+    color: #fff;  /* Color del texto en blanco */
+    font-weight: bold;  /* Texto en negrita */
+    font-size: 1.2rem;  /* Tamaño de fuente 1.2rem */
+    background-color: var(--azul_marino);  /* Fondo de color azul marino */
+    padding: .5rem 1rem;  /* Relleno de .5rem arriba y abajo, 1rem a los lados */
+    border-radius: var(--border-r);  /* Radio de borde, utiliza el valor definido en --border-r */
 }
 
 .company {
-    margin-bottom: 10px;
-    /*text-transform: uppercase;*/
-    text-align: start;
+    margin-bottom: 10px;  /* Margen inferior de 10px */
+    text-align: start;  /* Alinea el texto a la izquierda */
 }
 
 h1 {
-    font-size: 2.8rem;
+    font-size: 2.8rem;  /* Tamaño de fuente de 2.8rem para elementos h1 */
 }
 
+/* Estilos para encabezados h2 y h3 */
 h2 {
-    font-size: 2.5rem;
+    font-size: 2.5rem;  /* Tamaño de fuente para encabezados h2 */
 }
 
 h3 {
-    font-size: 2.2rem;
+    font-size: 2.2rem;  /* Tamaño de fuente para encabezados h3 */
 }
 
-/** Header **/
+/** Estilos para el encabezado **/
 
 .header-landing {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background: #f2f2f2;
-    padding: 1rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    background: #f2f2f2;  /* Fondo del encabezado */
+    padding: 1rem;  /* Espaciado interno del encabezado */
+    margin-top: 1rem;  /* Margen superior del encabezado */
+    margin-bottom: 1rem;  /* Margen inferior del encabezado */
 }
 
 .logo-header {
-    max-width: 50px;
+    max-width: 50px;  /* Ancho máximo del logo en el encabezado */
     height: 100%;
     width: 100%;
-    border-radius: 25%;
+    border-radius: 25%;  /* Borde redondeado para el logo en el encabezado */
 }
 
-/** Hero Section **/
+/** Estilos para la sección del héroe **/
 
 .hero-section {
-    height: 90vh;
-    background: url(../img/coworking-bg.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: rgba(106, 141, 163, 0.7);
-    background-blend-mode: multiply;
+    height: 90vh;  /* Altura de la sección del héroe */
+    background: url(../img/coworking-bg.jpg);  /* Imagen de fondo */
+    background-position: center;  /* Posición del fondo en el centro */
+    background-repeat: no-repeat;  /* No repetir la imagen de fondo */
+    background-size: cover;  /* Ajustar el tamaño de la imagen de fondo */
+    background-color: rgba(106, 141, 163, 0.7);  /* Color de fondo con opacidad */
+    background-blend-mode: multiply;  /* Modo de mezcla de fondo */
     display: flex;
     align-items: center;
 }
 
 .wrap-hero-section {
-    max-width: 600px;
-    color: #fff;
-    padding: 15%;
+    max-width: 600px;  /* Ancho máximo del contenedor de la sección del héroe */
+    color: #fff;  /* Color del texto en la sección del héroe */
+    padding: 15%;  /* Espaciado interno del contenedor de la sección del héroe */
 }
 
-/* Botton section */
+/* Estilos para la sección de botones */
 .botton {
-    background-color: var(--azul_marino);
-    text-decoration: none;
-    padding: .5rem 2.5rem;
-    /*El 3rem es para las esquinas redondeadas*/
-    border-radius: 5px;
-    color: var(--blanco);
-    text-align: center;
+    background-color: var(--azul_marino);  /* Color de fondo para los botones */
+    text-decoration: none;  /* Sin decoración de subrayado para los botones */
+    padding: .5rem 2.5rem;  /* Espaciado interno para los botones */
+    border-radius: 5px;  /* Borde redondeado para los botones */
+    color: var(--blanco);  /* Color de texto para los botones */
+    text-align: center;  /* Alineación del texto al centro para los botones */
 }
 
-/* Acerca de section */
+/* Estilos para la sección "Acerca de" */
 .about {
-    background-color: var(--azul_marino);
-    text-align: center;
+    background-color: var(--azul_marino);  /* Color de fondo para la sección "Acerca de" */
+    text-align: center;  /* Alineación del texto al centro para la sección "Acerca de" */
 }
 
 @media (min-width: 768px) {
@@ -138,27 +137,28 @@ h3 {
     }
 }
 
+/* Estilos para la sección "Acerca del Servicio" */
 .about-service {
-    margin-top: auto;
-    background-color: var(--azul_marino);
+    margin-top: auto;  /* Margen superior automático para ajustar la posición en el diseño */
+    background-color: var(--azul_marino);  /* Color de fondo para la sección "Acerca del Servicio" */
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 30px;
-    padding-top: 20px;
+    flex-direction: column;  /* Diseño de columna para los elementos dentro de la sección */
+    align-items: center;  /* Alineación al centro de los elementos */
+    padding-bottom: 30px;  /* Espaciado inferior de la sección */
+    padding-top: 20px;  /* Espaciado superior de la sección */
 }
 
 .about-service h3 {
-    color: var(--blanco);
-    font-weight: bold;
-    font-size: 1.8rem;
-    padding-bottom: 30px;
-    padding-top: 20px;
+    color: var(--blanco);  /* Color del texto para los encabezados h3 */
+    font-weight: bold;  /* Peso de la fuente en negrita para los encabezados h3 */
+    font-size: 1.8rem;  /* Tamaño de fuente para los encabezados h3 */
+    padding-bottom: 30px;  /* Espaciado inferior para los encabezados h3 */
+    padding-top: 20px;  /* Espaciado superior para los encabezados h3 */
 }
 
 .about-service h2 {
-    padding-bottom: 30px;
-    padding-top: 20px;
+    padding-bottom: 30px;  /* Espaciado inferior para los encabezados h2 */
+    padding-top: 20px;  /* Espaciado superior para los encabezados h2 */
 }
 
 .about-service .iconos {
@@ -178,24 +178,27 @@ h3 {
     /* Centra los elementos */
 }
 
+/* Estilos para los párrafos dentro de la sección "Acerca" */
 .about p {
-    line-height: 1.5;
-    text-align: center;
-    font-size: 1.2rem;
+    line-height: 1.5;  /* Altura de línea para el texto de los párrafos */
+    text-align: center;  /* Alineación centrada para el texto de los párrafos */
+    font-size: 1.2rem;  /* Tamaño de fuente para el texto de los párrafos */
 }
 
+/* Estilos para la sección "Acerca de" */
 .about_of {
-    background-color: var(--azul_marino);
-    color: var(--blanco);
-    display: flex;
-    justify-content: center;
-    margin: 0 1rem;
+    background-color: var(--azul_marino);  /* Color de fondo para la sección "Acerca de" */
+    color: var(--blanco);  /* Color del texto para la sección "Acerca de" */
+    display: flex;  /* Diseño de caja flexible para alinear elementos */
+    justify-content: center;  /* Alineación centrada de los elementos horizontales */
+    margin: 0 1rem;  /* Margen en los lados izquierdo y derecho */
 }
 
+/* Estilos para elementos con la clase "letras_blancas" */
 .letras_blancas {
-    color: var(--blanco);
-    width: auto;
-    padding-top: 2rem;
+    color: var(--blanco);  /* Color del texto */
+    width: auto;  /* Ancho automático */
+    padding-top: 2rem;  /* Espaciado superior */
 }
 
 /** Logo Brand Section **/
@@ -203,42 +206,47 @@ h3 {
     margin: 5rem 0;
 }
 
+/* Estilos para elementos dentro de la clase "section" con un elemento "h2" */
 .section h2 {
-    padding: 2rem 0;
+    padding: 2rem 0;  /* Relleno superior e inferior de 2 rem */
 }
 
+/* Estilos para elementos dentro de la clase "wrap-logos-section" */
 .wrap-logos-section {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
+    display: flex;  /* Mostrar como flex */
+    flex-flow: row wrap;  /* Alinear en filas y envolver si es necesario */
+    justify-content: center;  /* Centrar horizontalmente */
+    align-items: center;  /* Centrar verticalmente */
 }
 
+/* Estilos para elementos con la clase "logo-brand" */
 .logo-brand {
-    width: 200px;
-    padding: 1rem 2rem;
-    filter: grayscale(1);
+    width: 200px;  /* Ancho de 200px */
+    padding: 1rem 2rem;  /* Relleno superior e inferior de 1 rem, relleno izquierdo y derecho de 2 rem */
+    filter: grayscale(1);  /* Aplicar escala de grises al 100% */
 }
 
-/** Wrap Title **/
+/* Estilos para elementos con la clase "wrap-title-section" */
 .wrap-title-section {
-    display: flex;
-    justify-content: center;
-    margin: 3rem 1rem;
+    display: flex;  /* Mostrar como flex */
+    justify-content: center;  /* Centrar horizontalmente */
+    margin: 3rem 1rem;  /* Márgenes superior e inferior de 3 rem, márgenes izquierdo y derecho de 1 rem */
 }
 
+/* Estilos para elementos con la clase "wrap-title-section-2nd" */
 .wrap-title-section-2nd {
-    display: flex;
-    justify-content: center;
-    margin: 3rem 1rem;
-    color: var(--blanco);
+    display: flex;  /* Mostrar como flex */
+    justify-content: center;  /* Centrar horizontalmente */
+    margin: 3rem 1rem;  /* Márgenes superior e inferior de 3 rem, márgenes izquierdo y derecho de 1 rem */
+    color: var(--blanco);  /* Color del texto blanco */
 }
 
-/** Servicios Section **/
+/* Estilos para elementos con la clase "information-services" */
 .information-services {
-    background-color: var(--azul_marino);
-    text-align: center;
+    background-color: var(--azul_marino);  /* Color de fondo azul marino */
+    text-align: center;  /* Alineación central del texto */
 }
+
 
 @media (min-width: 768px) {
     .info_services {
@@ -250,27 +258,30 @@ h3 {
     }
 }
 
+/* Estilos para elementos con la clase "info-service" */
 .info-service {
-    margin-top: auto;
-    background-color: var(--azul_marino);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 30px;
-    padding-top: 20px;
+    margin-top: auto;  /* Mover el margen superior automáticamente */
+    background-color: var(--azul_marino);  /* Color de fondo azul marino */
+    display: flex;  /* Mostrar como flex */
+    flex-direction: column;  /* Alinear en columna */
+    align-items: center;  /* Centrar verticalmente */
+    padding-bottom: 30px;  /* Relleno inferior de 30px */
+    padding-top: 20px;  /* Relleno superior de 20px */
 }
 
+/* Estilos para elementos dentro de "info-service" con un elemento "h3" */
 .info-service h3 {
-    color: var(--blanco);
-    font-weight: bold;
-    font-size: 1.8rem;
-    padding-bottom: 30px;
-    padding-top: 20px;
+    color: var(--blanco);  /* Color del texto blanco */
+    font-weight: bold;  /* Negrita */
+    font-size: 1.8rem;  /* Tamaño de fuente de 1.8rem */
+    padding-bottom: 30px;  /* Relleno inferior de 30px */
+    padding-top: 20px;  /* Relleno superior de 20px */
 }
 
+/* Estilos para elementos dentro de "info-service" con un elemento "h2" */
 .info-service h2 {
-    padding-bottom: 30px;
-    padding-top: 20px;
+    padding-bottom: 30px;  /* Relleno inferior de 30px */
+    padding-top: 20px;  /* Relleno superior de 20px */
 }
 
 .info-service .imagen {
@@ -290,89 +301,101 @@ h3 {
     /* Centra los elementos */
 }
 
+/* Estilos para elementos "p" dentro de la clase "information-services" */
 .information-services p {
-    line-height: 1.5;
-    text-align: center;
-    font-size: 1.2rem;
+    line-height: 1.5;  /* Altura de línea de 1.5 */
+    text-align: center;  /* Alineación central del texto */
+    font-size: 1.2rem;  /* Tamaño de fuente de 1.2rem */
 }
 
+/* Estilos para elementos con la clase "info_ser" */
 .info_ser {
-    background-color: var(--azul_marino);
-    color: var(--blanco);
-    display: flex;
-    justify-content: center;
-    margin: 0 1rem;
+    background-color: var(--azul_marino);  /* Color de fondo azul marino */
+    color: var(--blanco);  /* Color del texto blanco */
+    display: flex;  /* Mostrar como flex */
+    justify-content: center;  /* Centrar horizontalmente */
+    margin: 0 1rem;  /* Margen de 0 en los lados y 1rem arriba y abajo */
 }
 
+/* Estilos para elementos con la clase "wrap-bg" */
 .wrap-bg {
-    background-color: var(--azul_marino);
+    background-color: var(--azul_marino);  /* Color de fondo azul marino */
 }
 
+/* Estilos para elementos con la clase "wrap-servicios-section" */
 .wrap-servicios-section {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
+    display: flex;  /* Mostrar como flex */
+    flex-flow: row wrap;  /* Alinear en fila y envolver en múltiples líneas si es necesario */
+    justify-content: center;  /* Centrar horizontalmente */
 }
 
+/* Estilos para elementos con la clase "item-servicios-section" */
 .item-servicios-section {
-    padding: 1rem;
+    padding: 1rem;  /* Relleno de 1rem */
 }
 
+/* Estilos para elementos "p" dentro de "item-servicios-section" */
 .item-servicios-section p {
-    padding: 1rem;
-    text-align: center;
-    color: var(--blanco);
-    font-weight: bold;
+    padding: 1rem;  /* Relleno de 1rem */
+    text-align: center;  /* Alineación central del texto */
+    color: var(--blanco);  /* Color del texto blanco */
+    font-weight: bold;  /* Negrita */
 }
 
+/* Estilos para elementos "img" dentro de "item-servicios-section" */
 .item-servicios-section img {
-    width: 300px;
-    height: 225px;
+    width: 300px;  /* Ancho de 300px */
+    height: 225px;  /* Altura de 225px */
 }
 
-/** Two Columns Section **/
-
+/* Estilos para elementos con la clase "wrap-two-column" */
 .wrap-two-column {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    max-width: 1200px;
-    margin: 0 auto;
+    display: grid;  /* Mostrar como grid */
+    grid-template-columns: 1fr 1fr;  /* Dos columnas de tamaño igual */
+    max-width: 1200px;  /* Ancho máximo de 1200px */
+    margin: 0 auto;  /* Margen de 0 en los lados y centrado horizontalmente */
 }
 
+/* Estilos para elementos con la clase "wrap-img_two-column" */
 .wrap-img_two-column {
-    padding: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column;
+    padding: 2rem;  /* Relleno de 2rem */
+    display: flex;  /* Mostrar como flex */
+    justify-content: center;  /* Centrar horizontalmente */
+    align-items: center;  /* Centrar verticalmente */
+    flex-flow: column;  /* Alinear en columna */
 }
 
+/* Estilos para elementos "h3" dentro de "wrap-text-column" */
 .wrap-text-column h3 {
-    padding: 2rem 0;
-    color: var(--negro);
+    padding: 2rem 0;  /* Relleno superior e inferior de 2rem */
+    color: var(--negro);  /* Color del texto negro */
 }
 
+/* Estilos para elementos "p" dentro de "wrap-text-column" */
 .wrap-text-column p {
-    padding-bottom: 1rem;
-    color: var(--negro);
+    padding-bottom: 1rem;  /* Relleno inferior de 1rem */
+    color: var(--negro);  /* Color del texto negro */
 }
 
+/* Estilos para elementos con la clase "wrap-p" */
 .wrap-p {
-    text-align: center;
-    font-weight: normal;
-    padding-bottom: 1rem;
+    text-align: center;  /* Alineación central del texto */
+    font-weight: normal;  /* Peso de la fuente normal */
+    padding-bottom: 1rem;  /* Relleno inferior de 1rem */
 }
 
-/** Form Section **/
+/* Estilos para elementos con la clase "form-contact" */
 .form-contact {
-    background-color: var(--azul_marino);
+    background-color: var(--azul_marino);  /* Color de fondo azul marino */
+    padding-bottom: 30px;
 }
 
+/* Estilos para elementos "h2" dentro de "form-contact" */
 .form-contact h2 {
-    text-align: center;
-    color: var(--blanco);
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    text-align: center;  /* Alineación central del texto */
+    color: var(--blanco);  /* Color del texto blanco */
+    padding-top: 2rem;  /* Relleno superior de 2rem */
+    padding-bottom: 2rem;  /* Relleno inferior de 2rem */
 }
 
 .formulario {
@@ -474,79 +497,92 @@ h3 {
 
 /* Ubication */
 
+/* Estilos para elementos con la clase "location" */
 .location {
-    text-align: center;
+    text-align: center;  /* Alineación central del texto */
 }
 
-.location  h2 {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+/* Estilos para elementos "h2" dentro de "location" */
+.location h2 {
+    padding-top: 2rem;  /* Relleno superior de 2rem */
+    padding-bottom: 2rem;  /* Relleno inferior de 2rem */
 }
 
+/* Estilos para elementos con la clase "location-kb" */
 .location-kb {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Dos columnas de igual tamaño */
+    display: grid;  /* Mostrar como grid */
+    grid-template-columns: 1fr 1fr;  /* Dos columnas de igual tamaño */
 }
 
+/* Estilos para elementos con la clase "letras_oscuras" */
 .letras_oscuras {
-    color:var(--negro);
-    text-align: center;
+    color: var(--negro);  /* Color del texto negro */
+    text-align: center;  /* Alineación central del texto */
 }
 
+/* Estilos para elementos con la clase "location-full" */
 .location-full {
-    margin-top: 40px;
-    margin-right: 30px;
+    margin-top: 40px;  /* Margen superior de 40px */
+    margin-right: 30px;  /* Margen derecho de 30px */
 }
 
+/* Estilos para elementos con la clase "letras" */
 .letras {
-    align-items: center;
+    align-items: center;  /* Alinear en el centro */
 }
 
+/* Estilos para elementos "img" */
 img {
-    width: 300px; 
-    height: 200px; 
+    width: 300px;  /* Ancho de 300px */
+    height: 200px;  /* Altura de 200px */
 }
 
+/* Estilos para elementos con la clase "margen_izq" */
 .margen_izq {
-    width: 350px;
-    height: 270px;
+    width: 350px;  /* Ancho de 350px */
+    height: 270px;  /* Altura de 270px */
 }
 
-/** Footer **/
-
+/* Estilos para elementos con la clase "footer-section" */
 .footer-section {
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: 1200px;  /* Ancho máximo de 1200px */
+    margin: 0 auto;  /* Margen de 0 en los lados y centrado horizontalmente */
 }
 
+/* Estilos para elementos con la clase "menu-footer-section" */
 .menu-footer-section {
-    padding: 1rem 0;
+    padding: 1rem 0;  /* Relleno superior e inferior de 1rem */
 }
 
+/* Estilos para elementos con la clase "wrap-social-logos" y "wrap-menu-footer-section" */
 .wrap-social-logos ul,
 .wrap-menu-footer-section ul {
-    display: flex;
-    justify-content: center;
+    display: flex;  /* Mostrar como flex */
+    justify-content: center;  /* Centrar horizontalmente */
 }
 
+/* Estilos para elementos con la clase "social-logo" */
 .social-logo {
-    max-width: 75px;
-    width: 100%;
-    padding: 1rem;
+    max-width: 75px;  /* Ancho máximo de 75px */
+    width: 100%;  /* Ancho del 100% */
+    padding: 1rem;  /* Relleno de 1rem */
 }
 
+/* Estilos para elementos "li" dentro de "wrap-menu-footer-section" */
 .wrap-menu-footer-section ul li {
-    font-size: 1.1rem;
-    padding: 1.5rem;
+    font-size: 1.1rem;  /* Tamaño de fuente de 1.1rem */
+    padding: 1.5rem;  /* Relleno de 1.5rem */
 }
 
+/* Estilos para elementos "a" dentro de "wrap-menu-footer-section" */
 .wrap-menu-footer-section a {
-    color: var(--negro);
-    cursor: pointer;
+    color: var(--negro);  /* Color del texto negro */
+    cursor: pointer;  /* Cambiar el cursor a pointer */
 }
 
+/* Estilos para elementos con la clase "footer-creds" */
 .footer-creds {
-    display: flex;
-    justify-content: center;
-    font-weight: bold;
+    display: flex;  /* Mostrar como flex */
+    justify-content: center;  /* Centrar horizontalmente */
+    font-weight: bold;  /* Peso de la fuente en negrita */
 }
